@@ -1,14 +1,57 @@
-var win = 0;
-var lose = 0;
-var score = 0;
-var randomNum; 
 var gemNumPink;
 var gemNumPurple;
 var gemNumBlue;
 var gemNumYellow;
+var randomNum; 
+var win = 0;
+var lose = 0;
+var score = 0;
 
 $(document).ready(function() {
     startGame();
 
-$("#pnkGemImg").on("click")function( {})
-}
+    $("#pink").on("click",function() {
+        score += gemNumPink;
+        $("#score").text(score);
+        $("#lose-win").text("");
+        setLoseWin();
+    });
+
+    $("#purple").on("click",function() {
+        score += gemNumPurple;
+        $("#score").text(score);
+        $("#lose-win").text("")
+        setLoseWin();
+    });
+
+    $("blue").on("click",function() {
+        score += gemNumBlue;
+        $("#score").text(score);
+        $("#lose-win").text("")
+        setLoseWin();
+    });
+
+    $("yellow").on("click",function() {
+        score += gemNumYellow;
+        $("#score").text(score);
+        $("#lose-win").text("")
+        setLoseWin();
+    });
+});
+
+function startGame() {
+    gameStarted = true;
+
+    randomNum = Math.floor(Math.random() * 121);
+    while (randomNum < 19) {
+        randomNum = Math.floor(Math.random() * 121);
+    }
+    $("#random-num-box").text(randomNum);
+
+    gemNumPink === gemNumPurple ||
+    gemNumPink === gemNumBlue ||
+    gemNumPink === gemNumYellow ||
+
+    gemNumPurple === gemNumYellow ||
+    gemNumPurple === gemNumBlue ||
+)}

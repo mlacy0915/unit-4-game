@@ -1,6 +1,8 @@
 html {
     font-family: 'Vibes', cursive;
-    background-image: url(./MarbleVeined0066_1_download600.jpg)
+    background-image: url(./MarbleVeined0066_1_download600.jpg);
+    background-repeat: no-repeat;
+    background-size: 100%;
     background-color: #6c6878;
 
 header {
@@ -9,18 +11,17 @@ header {
 }
 
 #pnkgem {
-
+    font-family: 'Vibes', cursive;
 }
 
 #prplgem {
-
+    font-family: 'Vibes', cursive
 }
 
 #blugem {
-
+    font-family: 'Vibes', cursive
 }
 
 #ylwgem {
-
-
+    font-family: 'Vibes', cursive
 }
