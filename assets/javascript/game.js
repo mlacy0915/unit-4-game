@@ -6,32 +6,33 @@ var randomNum;
 var win = 0;
 var lose = 0;
 var score = 0;
+var gameStarted = false;
 
 $(document).ready(function() {
     startGame();
 
-    $("#pink").on("click",function() {
+    $("#pnkgem").on("click",function() {
         score += gemNumPink;
         $("#score").text(score);
         $("#lose-win").text("");
         setLoseWin();
     });
 
-    $("#purple").on("click",function() {
+    $("#prplgem").on("click",function() {
         score += gemNumPurple;
         $("#score").text(score);
         $("#lose-win").text("")
         setLoseWin();
     });
 
-    $("blue").on("click",function() {
+    $("#blugem").on("click",function() {
         score += gemNumBlue;
         $("#score").text(score);
         $("#lose-win").text("")
         setLoseWin();
     });
 
-    $("yellow").on("click",function() {
+    $("#ylwgem").on("click",function() {
         score += gemNumYellow;
         $("#score").text(score);
         $("#lose-win").text("")
@@ -54,4 +55,10 @@ function startGame() {
 
     gemNumPurple === gemNumYellow ||
     gemNumPurple === gemNumBlue ||
-)}
+}
+
+function setLoseWin() {
+    if (score === randomNum) {
+        win++;
+    }
+}

@@ -1,26 +1,23 @@
-<!DOCTYPE html>
+<!doctype html>
 <html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <meta http-equiv="X-UA-Compatible" content="ie=edge">
-    <title>CrystalsCollector Game</title>
-    <link href="https://fonts.googleapis.com/css?family=Vibes&display=swap" rel="stylesheet">
+  <head>
+    <title>Crystals Collector</title>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
+    <link href="https://fonts.googleapis.com/css?family=Amatic+SC|Love+Ya+Like+A+Sister&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="./assets/css/style.css">
-    <link rel="stylesheet" href="./assets/javascript/game.js">
     <link rel="stylesheet" href="./assets/css/reset.css">
-
-
 </head>
-
-<Header>Crystals Collector</Header>
-
-<body>
-
-    <div>
-
+  <body>
+    <div class="jumbotron jumbotron-fluid">
         <div class="container">
-
+          <h1 class="display-4">Crystals Collector</h1>
+          <p class="lead">   </p>
+        </div>
+    </div>
+    <div>
+        <div class="container">
             <section>
 
                 <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Molestiae aliquid expedita placeat explicabo at nihil ex animi atque!</p>
@@ -28,7 +25,6 @@
             </section>
         </div>
     </div>
-
     <div class= container>
         <div id = win-lo>
 
@@ -40,21 +36,26 @@
 
         </div>
     </div>
-    <div id=pnkgem>
-        <img id = pink src="./assets/images/pink.png">
+    <div>
+        <Button id=pnkgem><img id = pink src="./assets/images/pink.png"></Button>
     </div>
-    <div id= prplgem>
-        <img id = purple src="./assets/images/purple.png">
+    <div>
+        <Button id= prplgem><img id = purple src="./assets/images/purple.png"></Button>
     </div>
-    <div id= blugem>
-        <img id = blue src="./assets/images/blue.png">
+    <div>
+        <Button id= blugem><img id = blue src="./assets/images/blue.png"></Button>
     </div>
-    <div id= ylwgem>
-        <img id = yellow style = "width:0px; height: 0px "./assets/images/yellow.png">
+    <div>
+        <Button  id= ylwgem><img id = yellow src="./assets/images/yellow.png"></Button>
     </div>
 
     <div class="container score">
 
     </div>
-</body>
+    <script src="./assets/javascript/game.js"></script>
+    <!-- jQuery first, then Popper.js, then Bootstrap JS -->
+    <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js" integrity="sha384-UO2eT0CpHqdSJQ6hJty5KVphtPhzWj9WO1clHTMGa3JDZwrnQq4sF86dIHNDz0W1" crossorigin="anonymous"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js" integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM" crossorigin="anonymous"></script>
+  </body>
 </html>

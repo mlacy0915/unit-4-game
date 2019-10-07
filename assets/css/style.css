@@ -1,27 +1,61 @@
-html {
-    font-family: 'Vibes', cursive;
+.jumbotron-fluid {
+    font-family: 'Love Ya Like A Sister', cursive;
+    text-align: center;
+    background-color: #6c6878;
+    background-image: url(./Purple-Pink-Night-Sky-Wallpaper.jpg);
+}
+
+.display-4 {
+    font-size: 82px;
+}
+
+body {
+    font-family: 'Amatic SC', cursive;
     background-image: url(./MarbleVeined0066_1_download600.jpg);
     background-repeat: no-repeat;
     background-size: 100%;
     background-color: #6c6878;
-
-header {
-    font-family: 'Vibes', cursive;
-    background-color: #6c6878;
 }
 
 #pnkgem {
-    font-family: 'Vibes', cursive;
+font-family: 'Love Ya Like A Sister', cursive;
+background-color: transparent;
+border: none;
 }
 
 #prplgem {
-    font-family: 'Vibes', cursive
+    font-family: 'Love Ya Like A Sister', cursive;
+    background-color: transparent;
+    border: none;
 }
 
 #blugem {
-    font-family: 'Vibes', cursive
+    font-family: 'Love Ya Like A Sister', cursive;
+    background-color: transparent;
+    border: none;
 }
 
 #ylwgem {
-    font-family: 'Vibes', cursive
+    font-family: 'Love Ya Like A Sister', cursive;
+    background-color: transparent;
+    border: none;
+}
+
+#pink {
+
+}
+
+#purple {
+    height: 100px;
+    width: 100px;
+}
+
+#blue {
+    height: 100px;
+    width: 100px;
+}
+
+#yellow {
+    height: 100px;
+    width: 100px;
 }
