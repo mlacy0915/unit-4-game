@@ -1,20 +1,123 @@
+
 .jumbotron-fluid {
     font-family: 'Love Ya Like A Sister', cursive;
+    color: cornflowerblue;
     text-align: center;
     background-color: #6c6878;
-    background-image: url(./Purple-Pink-Night-Sky-Wallpaper.jpg);
+    padding: 10px;
+    border-style: double;
+    border-width: 5px;
+    border-color: #6c6878;
+    background-image: url(../images/twinklingstars.gif);
+    opacity: 50%;
 }
 
-.display-4 {
-    font-size: 82px;
+.card-title {
+    text-align: center;
+    font-size: 40px;
+    font-weight: bold;
+    text-decoration: underline;
+    -webkit-text-emphasis: open;
+    color: #6c6878;
 }
+
+  #pnkgem {
+    position: relative;
+    top: -470px;
+    left: -90px;
+  }
+
+  #prplgem {
+    position: relative;
+    top: -709px;
+    left: 40px;
+  }
+
+  #blugem {
+    position: relative;
+    top: -460px;
+    left: 60px;
+  }
+
+  #ylwgem {
+    position: relative;
+    top: -700px;
+    left: -90px;
+  }
+
+  .score-box {
+    /* position: relative; */
+    color: black;
+    top: -530px;
+    right: -380px;
+    font-size: 30px;
+    border-style: double;
+    border-width: 5px;
+    border-color: #6c6878;
+  }
+
+  #random-score {
+    margin-top: 2px;
+    width: 200px;
+    height: 100px;
+    border-style: double;
+    border-width: 5px;
+    border-color: #6c6878;
+    margin-left: 1%;
+    font-size: 33px;
+  }
+
+  #win-lose-box {
+    margin-top: 80px;
+    width: 180px;
+    height: 100px;
+    border-style: double;
+    border-width: 5px;
+    border-color: #6c6878;
+    margin-left: 1%;
+    font-size: 42px;
+  }
+
+  #win-lose-message {
+    font-size: 50px;
+    font-weight: bold;
+    color: black;
+  }
 
 body {
     font-family: 'Amatic SC', cursive;
-    background-image: url(./MarbleVeined0066_1_download600.jpg);
+    background-image: url(../images/MarbleVeined0066_1_download600.jpg);
     background-repeat: no-repeat;
     background-size: 100%;
     background-color: #6c6878;
+    padding: 10px;
+}
+
+.card {
+    background: transparent;
+}
+.card-title {
+    text-align: center;
+    font-size: 40px;
+    font-weight: bold;
+    text-decoration: underline;
+    -webkit-text-emphasis: open;
+    color: #6c6878;
+}
+
+.card-body {
+    font-family: 'Amatic SC', cursive;
+    font-size: 30px;
+    border-style: double;
+    border-width: 5px;
+    border-color: #6c6878;
+    background: transparent;
+}
+
+#gems-box {
+    height: 100px;
+    width: 900px;
+    position: absolute;
 }
 
 #pnkgem {
@@ -42,20 +145,25 @@ border: none;
 }
 
 #pink {
-
+    width: 100px;
+    height: 100px;
+    float: right;
 }
 
 #purple {
-    height: 100px;
-    width: 100px;
+    height: 145px;
+    width: 125px;
+    float: right;
 }
 
 #blue {
     height: 100px;
     width: 100px;
+    float: right;
 }
 
 #yellow {
-    height: 100px;
-    width: 100px;
+    height: 115px;
+    width: 115px;
+    float: right;
 }

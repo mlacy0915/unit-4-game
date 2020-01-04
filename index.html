@@ -1,61 +1,125 @@
-<!doctype html>
+<!DOCTYPE html>
 <html lang="en">
-  <head>
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+
     <title>Crystals Collector</title>
-    <meta charset="utf-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
-    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
+
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css"
+        integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
     <link href="https://fonts.googleapis.com/css?family=Amatic+SC|Love+Ya+Like+A+Sister&display=swap" rel="stylesheet">
-    <link rel="stylesheet" href="./assets/css/style.css">
     <link rel="stylesheet" href="./assets/css/reset.css">
+    <link rel="stylesheet" href="./assets/css/style.css">
 </head>
-  <body>
+
+<body>
+
     <div class="jumbotron jumbotron-fluid">
         <div class="container">
-          <h1 class="display-4">Crystals Collector</h1>
-          <p class="lead">   </p>
+            <h1 class="display-4">Crystals Collector</h1>
+            <p class="lead"> </p>
         </div>
     </div>
-    <div>
-        <div class="container">
-            <section>
-
-                <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Molestiae aliquid expedita placeat explicabo at nihil ex animi atque!</p>
-
-            </section>
+    <div class="row">
+        <div class="col-sm-6">
+            <div class="card">
+                <div class="card-body">
+                    <h5 class="card-title">Intructions</h5>
+                    <p>
+                        <ol>
+                            <li>You will start with a random number</li>
+                            <li>Clicking on a gem will add a specific amount of points to your total</li>
+                            <li>You once your total score matches the random number</li>
+                            <li>You will lose if you score exceeds the random number</li>
+                            <li>The points given by each gem will be hidden until you click on the gem</li>
+                            <li>The gem value changes for every new game</li>
+                        </ol>
+                    </p>
+                </div>
+            </div>
         </div>
-    </div>
-    <div class= container>
-        <div id = win-lo>
 
-        </div>
-    </div>
+        <div>
 
-    <div class= container>
-        <div id=score-random>
+            <div class="container">
 
-        </div>
-    </div>
-    <div>
-        <Button id=pnkgem><img id = pink src="./assets/images/pink.png"></Button>
-    </div>
-    <div>
-        <Button id= prplgem><img id = purple src="./assets/images/purple.png"></Button>
-    </div>
-    <div>
-        <Button id= blugem><img id = blue src="./assets/images/blue.png"></Button>
-    </div>
-    <div>
-        <Button  id= ylwgem><img id = yellow src="./assets/images/yellow.png"></Button>
-    </div>
+                <div id="random-score">
 
-    <div class="container score">
+                    <div> Your Target Score is: </div>
 
-    </div>
-    <script src="./assets/javascript/game.js"></script>
-    <!-- jQuery first, then Popper.js, then Bootstrap JS -->
-    <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
-    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js" integrity="sha384-UO2eT0CpHqdSJQ6hJty5KVphtPhzWj9WO1clHTMGa3JDZwrnQq4sF86dIHNDz0W1" crossorigin="anonymous"></script>
-    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js" integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM" crossorigin="anonymous"></script>
-  </body>
+                    <div id="random-num-box"></div>
+                    <!-- style="width: 120px; height: 150px; font-size: 40px" -->
+
+                </div>
+            </div>
+
+            <div class="container">
+
+                <div id="win-lose-box">
+
+                    <p>You win:
+                        <span id="win-num"></span>
+                    </p>
+                    <p>You lose:
+                        <span id="lose-num"></span>
+                    </p>
+
+                </div>
+            </div>
+
+            <div class="container score-box">
+
+                <p id="win-lose-message" class="win-lose-message"></p>
+                <br>
+
+                <div> Your Total Score is: </div>
+
+                <div id="total-score-num"></div>
+            </div>
+
+            <div class=container id="gems-box">
+                <div id=win-lo>
+                    <div class="row">
+                        <div class="col-sm-6">
+                            <div class="card">
+                                <div class="card-body">
+                                    <h5 class="card-title">Gems</h5>
+                                    <div>
+                                        <Button id=pnkgem><img id=pink src="./assets/images/pink.png"></Button>
+                                    </div>
+                                    <div>
+                                        <Button id=prplgem><img id=purple src="./assets/images/purple.png"></Button>
+                                    </div>
+                                    <div>
+                                        <Button id=blugem><img id=blue src="./assets/images/blue.png"></Button>
+                                    </div>
+                                    <div>
+                                        <Button id=ylwgem><img id=yellow src="./assets/images/yellow.png"></Button>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
+                </div>
+
+
+                <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js"
+                    integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo"
+                    crossorigin="anonymous"></script>
+                <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js"
+                    integrity="sha384-UO2eT0CpHqdSJQ6hJty5KVphtPhzWj9WO1clHTMGa3JDZwrnQq4sF86dIHNDz0W1"
+                    crossorigin="anonymous"></script>
+                <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js"
+                    integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM"
+                    crossorigin="anonymous"></script>
+
+                <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+                <script src="./assets/javascript/game.js"></script>
+
+</body>
+
 </html>
